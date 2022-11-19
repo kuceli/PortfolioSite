@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="designs">
+      <div id="triangle"></div>
+      <div id="circle"></div>
+    </section>
+    <section class="container">
+      <div class="left">
+        <div id="logo-under">
+          <p>KE</p>
+        </div>
+        <div id="logo-ontop">
+          <div class="logo-lines" id="logo-line1"></div>
+          <p>Kuceli Englama</p>
+          <div class="logo-lines" id="logo-line2"></div>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Member Login</h1>
+        <p>
+          Don't have an account yet? <a href="registration.html">Register</a>
+        </p>
+        <form action="loginSuccess.html" id="form">
+          <fieldset>
+            <legend>Email</legend>
+            <input
+              type="email"
+              id="email"
+              pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z0-9.-]{1,}[.]{1}[a-zA-Z0-9]{2,}"
+              placeholder="xxxxxx@xxxx.xxx"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Password</legend>
+            <input
+              type="password"
+              id="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="must contain atleast one number, one uppercase and lowercase letter, and atleast 8 or more characters"
+              required
+            />
+          </fieldset>
+          <input type="submit" value="Login" class="btn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

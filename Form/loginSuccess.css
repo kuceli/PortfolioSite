@@ -1,0 +1,52 @@
+body {
+  background-color: whitesmoke;
+  margin-top: 150px;
+  padding: 0;
+}
+/* background design */
+#circle {
+  background-color: #fac93f;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -14%;
+  right: 80%;
+  z-index: -1;
+}
+#triangle {
+  position: absolute;
+  top: -15%;
+  left: 70%;
+  border-top: 270px solid transparent;
+  border-right: 550px solid #e74c3c;
+  border-bottom: 270px solid transparent;
+  transform: rotate(-25deg);
+  z-index: -1;
+}
+#success-message {
+  width: 30%;
+  height: 50vh;
+  background-color: white;
+  margin: auto;
+  padding: 90px 0 0 0;
+  border-radius: 7px;
+  /* box-shadow: 3px 20px 30px #3caf9f; */
+}
+p {
+  padding: 0;
+  margin: 0 0 0 110px;
+  background-color: #3caf9f;
+  color: white;
+  width: 200px;
+  height: 200px;
+  font-size: 170px;
+  text-align: center;
+  border-radius: 50%;
+}
+h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #3caf9f;
+  font-size: 40px;
+}

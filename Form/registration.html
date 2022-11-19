@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="designs">
+      <div id="triangle"></div>
+      <div id="circle"></div>
+    </section>
+    <section class="container">
+      <div class="left">
+        <div id="logo-under">
+          <p>KE</p>
+        </div>
+        <div id="logo-ontop">
+          <div class="logo-lines" id="logo-line1"></div>
+          <p>Kuceli Englama</p>
+          <div class="logo-lines" id="logo-line2"></div>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Register</h1>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+        <form action="login.html">
+          <div class="grid-container">
+            <div id="item1" class="grid-items">
+              <fieldset>
+                <legend>First Name</legend>
+                <input type="text" id="fName" required />
+              </fieldset>
+            </div>
+            <div id="item2" class="grid-items">
+              <fieldset>
+                <legend>Last Name</legend>
+                <input type="text" id="lName" required />
+              </fieldset>
+            </div>
+            <div id="item3" class="grid-items">
+              <fieldset>
+                <legend>Email</legend>
+                <input
+                  type="email"
+                  id="email"
+                  pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z0-9.-]{1,}[.]{1}[a-zA-Z0-9]{2,}"
+                  placeholder="xxxxxx@xxxx.xxx"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div id="item4" class="grid-items">
+              <fieldset>
+                <legend>Phone Number</legend>
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="08092324453"
+                  pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+                  title="must be 11 digits"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div id="item5" class="grid-items">
+              <fieldset>
+                <legend>Gender</legend>
+                <select id="gender" name="gender" required>
+                  <option value="">None</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Others">Others</option>
+                </select>
+              </fieldset>
+            </div>
+            <div id="item6" class="grid-items">
+              <fieldset>
+                <legend>Date of Birth</legend>
+                <input
+                  type="date"
+                  name="dob"
+                  id="dob"
+                  max="2009-12-31"
+                  title="You must be atleast 13 years to register"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div id="item7" class="grid-items">
+              <fieldset>
+                <legend>Favorite Color</legend>
+                <input type="color" name="color" id="color" />
+              </fieldset>
+            </div>
+            <div id="item8" class="grid-items">
+              <fieldset>
+                <legend>Password</legend>
+                <input
+                  type="password"
+                  id="password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="must contain atleast one number, one uppercase and lowercase letter, and atleast 8 or more characters"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div id="item9">
+              <input type="submit" value="Register" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

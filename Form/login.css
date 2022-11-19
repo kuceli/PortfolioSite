@@ -1,0 +1,135 @@
+body {
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+/* background design */
+#circle {
+  background-color: #fac93f;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -14%;
+  right: 80%;
+  z-index: -1;
+}
+#triangle {
+  position: absolute;
+  top: -15%;
+  left: 70%;
+  border-top: 270px solid transparent;
+  border-right: 500px solid #e74c3c;
+  border-bottom: 270px solid transparent;
+  transform: rotate(-25deg);
+  z-index: -1;
+}
+/* main content  */
+.container {
+  border-radius: 20px;
+  width: 85%;
+  height: 75%;
+  display: flex;
+  overflow: hidden;
+}
+/* left compartment */
+.left {
+  padding: auto;
+  width: 40%;
+  background-color: #3caf9f;
+  opacity: 0.94;
+}
+/* Logo */
+#logo-under p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+  font-size: 300px;
+  margin-top: 50px;
+}
+#logo-ontop {
+  position: absolute;
+  top: 40%;
+  left: 8.5%;
+  display: flex;
+}
+.logo-lines {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin-top: 40px;
+}
+#logo-line1 {
+  margin-right: 4px;
+}
+#logo-line2 {
+  margin-left: 4px;
+}
+#logo-ontop p {
+  margin: 0;
+  padding: 0;
+  font-size: 65px;
+  font-family: "Bilbo Swash Caps", cursive;
+}
+/* right compartment */
+.right {
+  padding: 30px 50px 0 50px;
+  width: 60%;
+  background-color: white;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.right h1 {
+  font-size: 35px;
+  margin: 0;
+}
+.right p {
+  margin: 0px 0px 30px 0px;
+}
+.right p a {
+  color: #3caf9f;
+  text-decoration: none;
+}
+.right p a:hover {
+  color: #e74c3c;
+}
+fieldset {
+  border: 1px solid #3caf9f;
+  width: 80%;
+  margin-bottom: 10px;
+}
+fieldset input {
+  border: none;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+fieldset input:focus {
+  outline: none;
+}
+.btn {
+  margin-top: 20px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: #3caf9f;
+  border-radius: 5px;
+  border: 2px solid #3caf9f;
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #3caf9f;
+}

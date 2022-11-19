@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    color:#25a9ad ;
+    font-size: 45px;
+    text-align: center;
+}
+#message{
+    color:#25a9ad ;
+    font-size: 25px;
+    text-align: center;
+}
+#game-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3,100px);
+}
+#game-grid > button{
+    border: 1px solid white;
+    color: #25a9ad;
+    font-size: 50px;
+}
+#reset{
+    font-size: 20px;
+    padding: 5px 30px;
+    color: #25a9ad;
+    background-color: transparent;
+    border: 1px solid #25a9ad;
+    border-radius: 15px;
+    margin-left: 655px;
+}
+#reset:hover{
+    background-color: #25a9ad;
+    color: white;
+}
